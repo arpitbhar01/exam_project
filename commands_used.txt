@@ -1,0 +1,11 @@
+git init
+git add .
+git commit -m "Initial commit"
+git checkout -b feature
+echo This is a feature branch update. > feature-note.txt
+git add feature-note.txt
+git commit -m "feature: add feature-note.txt"
+git checkout -b main
+git merge feature -m "Merge feature into main"
+git remote add origin https://github.com/arpitbhar01/exam_project.git
+git push -u origin main
